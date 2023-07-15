@@ -1,0 +1,21 @@
+{% extends 'cockteil/block_cocktail.html' %}
+ 
+{% block top %}
+		<div class="container" style="z-index: 2;">
+			<div >
+				<h2 class="mt-5">
+					Today is {{day}}.  And here is the cocktail of the day: <br>
+			  </h2>
+				<h5  style="color: gray;">
+					But you can make your own <a style="color: gray;" href="{% url 'favorites_path' %}"> choice </a>	
+				</h5>
+							</div>
+			<div class="row">
+					<div class="col mt-5">
+{% endblock %}
+
+{% block bottom %}
+    </div>
+  </div>
+</div>
+{% endblock %}
